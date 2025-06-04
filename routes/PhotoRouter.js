@@ -61,6 +61,7 @@ router.post(
     async (req, res) => {
         const photoPath = req.file.path;
         console.log("Uploaded photo path:", photoPath);
+        // const newPhotoPath = `http://localhost:8081/${photoPath}`;
         const newPhotoPath = `http://localhost:8081/${photoPath}`;
 
         const photo = new Photo({
